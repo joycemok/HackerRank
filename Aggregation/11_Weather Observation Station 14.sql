@@ -1,0 +1,9 @@
+-- My SQL --
+SELECT ROUND(MAX(LAT_N), 4)
+FROM Station
+WHERE Lat_n < 137.2345;
+
+-- MS SQL Server -- 
+SELECT CAST(ROUND(MAX(LAT_N), 4) AS DECIMAL(7,4))
+FROM Station
+WHERE Lat_n < 137.2345;
